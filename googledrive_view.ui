@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Google Drive View</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <column>
+         <property name="text">
+          <string>File</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>perm</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>owner</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>group</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>byte</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>date</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>syncstate</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>995</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDrive">
+    <property name="title">
+     <string>Drive</string>
+    </property>
+    <addaction name="actionOpen_Drive"/>
+   </widget>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>Files</string>
+    </property>
+    <addaction name="actionPush"/>
+    <addaction name="actionPull"/>
+    <addaction name="actionDiff"/>
+    <addaction name="actionMd5sum"/>
+   </widget>
+   <addaction name="menuDrive"/>
+   <addaction name="menuFiles"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Drive">
+   <property name="text">
+    <string>Open Drive</string>
+   </property>
+  </action>
+  <action name="actionPush">
+   <property name="text">
+    <string>push</string>
+   </property>
+  </action>
+  <action name="actionPull">
+   <property name="text">
+    <string>pull</string>
+   </property>
+  </action>
+  <action name="actionDiff">
+   <property name="text">
+    <string>diff</string>
+   </property>
+  </action>
+  <action name="actionMd5sum">
+   <property name="text">
+    <string>md5sum </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
